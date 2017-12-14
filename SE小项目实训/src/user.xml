@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<users>用户信息 
+  <user userName="13207161778"> 
+    <userPsswd>123asdASD</userPsswd>  
+    <nickName>yx</nickName> 
+  </user>  
+  <user userName="1124607928@qq.com">
+    <userPsswd>123asdASD</userPsswd>
+    <nickName>as</nickName>
+  </user>
+</users>
