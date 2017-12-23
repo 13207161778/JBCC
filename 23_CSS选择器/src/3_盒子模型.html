@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子模型</title>
+    <style type="text/css">
+        body{
+            margin: 0px;
+        }
+     .outer{
+        width: 300px;
+         height: 200px;
+         border: dashed 10px skyblue;
+         margin: 20px;
+         background-color: red;
+         padding: 20px;/* 上下左右的内间距都是20px*/
+     }
+    .inner{
+        background-color: chartreuse;
+        margin: 20px 20px;/* 上下是20px  左右20px*/
+    }
+        span{
+            /* 应为span为行内元素,对他设置的宽高度无效 */
+            /*display: block;*/
+            width: 200px;
+            height: 50px;
+            font-size: 30px;
+            background-color: skyblue;
+            color: black;
+            margin: 30px;
+            padding: 30px;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+            background-color: coral;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+<div class="outer">
+    <div class="inner">1</div>
+</div>
+<div class="outer">1</div>
+<!--对块级元素:
+  什么是块级元素? 独占一行
+  块级元素之间margin属性相遇时,会取最大值
+  div,h1-h6,table,form,p
+  内联元素/行内元素  可以与其他元素同处
+  不可以设置高度,上下阿外间距
+  span input em strong mark
+  //内联行内元素 同处一行 可以设置宽高度,上下外间距.
+  元素的类型
+  img
+-->
+
+<span>我是span</span>
+<img src="http://img4.imgtn.bdimg.com/it/u=1742142401,3793645947&fm=11&gp=0.jpg">
+</body>
+</html>

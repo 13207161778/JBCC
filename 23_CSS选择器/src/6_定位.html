@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定位</title>
+    <style type="text/css">
+    /*
+      绝对定位:相对于自己的父标签,如果父标签不具备定位,那么子标签会找最近的父标签
+      相对定位:相对标签原有的位置移动,并且该标签原有的位置依然不能方元素
+      固定定位: 相对于流浪器
+     */
+        div{
+            background-color: darkorchid;
+            width: 200px;
+            height: 200px;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+        }
+        p{
+            background-color: yellow;
+            width: 100px;
+            height: 100px;
+            /*position: absolute;*/
+            right: 50px;
+            top: 50px;
+        }
+
+    </style>
+</head>
+<body>
+  <div>
+      <!--<p></p>-->
+  </div>
+<p></p>
+</body>
+</html>
