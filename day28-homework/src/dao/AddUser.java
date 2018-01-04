@@ -1,5 +1,6 @@
 package dao;
 
+import bean.User;
 import utils.JDBCUtils;
 import utils.JQueryUtils;
 

@@ -5,7 +5,7 @@
          version="3.1">
 <servlet>
     <servlet-name>AddUser</servlet-name>
-    <servlet-class>servlet.AddUserSlrvlet</servlet-class>
+    <servlet-class>web.AddUserSlrvlet</servlet-class>
 </servlet>
     <servlet-mapping>
         <servlet-name>AddUser</servlet-name>
@@ -13,7 +13,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>login</servlet-name>
-        <servlet-class>servlet.LoginServlet</servlet-class>
+        <servlet-class>web.LoginServlet</servlet-class>
 
     </servlet>
     <servlet-mapping>
@@ -22,7 +22,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>getuser</servlet-name>
-        <servlet-class>servlet.GetUserServlet</servlet-class>
+        <servlet-class>web.GetUserServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>getuser</servlet-name>
