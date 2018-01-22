@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="day43_struts2_hibernate_homework:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/day43_struts2_hibernate_homework_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="day43_struts2_hibernate_homework/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="day43_struts2_hibernate_homework" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Struts 2" />
+          <element id="library" level="project" name="Hibernate" />
+          <element id="library" level="module" name="JUnit4" module-name="day43_struts2_hibernate_homework" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

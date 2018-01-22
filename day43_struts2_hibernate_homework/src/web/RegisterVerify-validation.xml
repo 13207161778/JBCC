@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC
+        "-//Apache Struts//XWork Validator 1.0//EN"
+        "http://struts.apache.org/dtds/xwork-validator-1.0.dtd">
+<validators>
+
+    <field name="user.uname">
+        <field-validator type="stringlength">
+            <param name="minLength">6</param>
+            <param name="maxLength">12</param>
+            <message>用户名长度必须在6-12之间</message>
+        </field-validator>
+        <field-validator type="requiredstring">
+            <param name="trim">true</param>
+            <message>用户名不能为空</message>
+        </field-validator>
+    </field>
+    <field name="user.age">
+        <field-validator type="int">
+            <param name="min">0</param>
+            <param name="max">150</param>
+            <message>年龄要在0--150岁之间</message>
+        </field-validator>
+    </field>
+    <field name="user.department">
+        <field-validator type="requiredstring">
+            <param name="trim">true</param>
+            <message>部门不能为空</message>
+        </field-validator>
+    </field>
+    <field name="user.time">
+        <field-validator type="requiredstring">
+            <param name="trim">true</param>
+            <message>日期不能为空</message>
+        </field-validator>
+    </field>
+    <field name="user.adderss">
+
+        <field-validator type="requiredstring">
+            <param name="trim">true</param>
+            <message>地址不能为空</message>
+        </field-validator>
+    </field>
+    <field name="user.phone">
+        <field-validator type="regex">
+            <param name="regex">[1]\d{10}</param>
+            <message>电话号码必须要以1开头，且长度为11</message>
+        </field-validator>
+        <field-validator type="requiredstring">
+            <param name="trim">true</param>
+            <message>电话不能为空</message>
+        </field-validator>
+    </field>
+</validators>
